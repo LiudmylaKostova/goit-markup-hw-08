@@ -1,0 +1,25 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+   border: 1px solid transparent;
+  /* min-width: 200px; */
+  color: $title-text-color;
+  background-color: $background-color;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-align: center;
+  
+
+&.primary {
+ 
+  padding: 10px 32px;
+  color: $background-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+}

@@ -1,0 +1,91 @@
+.footer {
+  background-color: #2f303a;
+}
+.container-top-part {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.footer-block {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 10px;
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.main-logo {
+  color: $background-color;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+.footer-address {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $background-color;
+}
+.footer-contacts {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-email {
+  margin-bottom: 10px;
+}
+
+
+.call-to-action {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $background-color;
+  text-transform: uppercase;
+}
+.container-bottom-part {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-copyright {
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.svg-footer {
+  margin-left: 10px;
+}
+
+
+  .form-subscribe {
+    display: flex;
+  }
+  .subscribe-input {
+    background: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }

@@ -11,8 +11,8 @@ body {
   background-color: $background-color;
   font-family: $main-font;
   letter-spacing: 0.03em;
-  overflow-x: hidden;
-  overflow-y: auto;
+  // overflow-x: hidden;
+  // overflow-y: auto;
 }
 .list {
   list-style: none;

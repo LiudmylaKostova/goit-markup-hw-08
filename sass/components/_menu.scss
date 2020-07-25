@@ -10,9 +10,9 @@
 	.logo {
 		display: inline-block;
 		padding-top: 16px;
-        padding-bottom: 16px;
-        font-size: 24px;
-        line-height: 1.17;
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.17;
 	}
 
 .site-nav {
@@ -28,10 +28,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   }
-  .link.current::after {
-      width: 61px;
-     
-  }
+  
   .contact-display:not(:last-child) {
 		margin-bottom: 16px;
   }
@@ -48,7 +45,6 @@
     top: 100%;
     left: 0;
     width: 100%;
-    height: 480px;
     background-color: #ffffff;
 
     &.is-open {
@@ -68,17 +64,22 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
 
-.menu-button .icon-cross {
+&:hover, 
+&:focus {
+ fill: $accent-color;
+ cursor: pointer;
+}
+& .icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+&.is-open .icon-cross {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+&.is-open .icon-menu {
   display: none;
+}
 }
 

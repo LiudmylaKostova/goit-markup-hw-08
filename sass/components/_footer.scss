@@ -1,25 +1,59 @@
 .footer {
   background-color: #2f303a;
+  text-align: center;
 }
 .container-top-part {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  }
+
+  .footer-items {
+	@media screen and (max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	@media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+	}
+ }
+}
+
+.footer-address-div {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+		margin-right: 70px;
+		margin-bottom: 0px;
+	}
 }
 .footer-block {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 .footer-logo {
   display: block;
-  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 1.17;
   font-family: Raleway, cursive;
   font-weight: 700;
+  margin-bottom: 20px;
+  
+  text-decoration: none;
+  	@media screen and (min-width: 1200px) {
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
+  }
 }
 .main-logo {
   color: $background-color;
@@ -30,7 +64,7 @@
 }
 .footer-address {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -56,6 +90,9 @@
   line-height: 1.14;
   color: $background-color;
   text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+  text-align: left;
+}
 }
 .container-bottom-part {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -74,18 +111,31 @@
 
 
   .form-subscribe {
-    display: flex;
+    @media screen and (max-width: 1199px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
   }
   .subscribe-input {
     background: #2f303a;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding-left: 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+		width: 358px;
+		margin-bottom: 0px;
+		margin-right: 12px;
+	}
   }

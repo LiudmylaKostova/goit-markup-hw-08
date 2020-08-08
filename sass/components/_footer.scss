@@ -37,8 +37,8 @@
 	}
 }
 .footer-block {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   margin-bottom: 60px;
 }
 .footer-logo {
@@ -58,10 +58,11 @@
 .main-logo {
   color: $background-color;
 }
-.footer-form {
-  display: flex;
-  flex-direction: column;
-}
+// .footer-form {
+//   // max-width: 570px;
+//   // display: flex;
+//   // flex-direction: column;
+// }
 .footer-address {
   display: block;
   margin-bottom: 8px;
@@ -84,6 +85,7 @@
 
 
 .call-to-action {
+  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;

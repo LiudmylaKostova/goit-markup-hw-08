@@ -149,15 +149,27 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="our-works">
           <li class="work-item">
-            <img src="./images/img1.jpg" alt="Это ноутбук" width="370" />
+            <picture>
+              <source srcset="./images/img.jpg 1x , ./images/img@2x.jpg 2x" media="(min-width: 1200px)">
+              <img src="./images/img1.jpg" alt="Это ноутбук" />
+            </picture>
+
             <h3 class="work-title">Десктопные приложения</h3>
           </li>
           <li class="work-item">
-            <img src="./images/img2.jpg" alt="Это мобильный телефон" width="370" />
+            <picture>
+              <source srcset="./images/box.jpg 1x , ./images/box@2x.jpg 2x" media="(min-width: 1200px)">
+              <img src="./images/img2.jpg" alt="Это мобильный телефон" />
+            </picture>
+
             <h3 class="work-title">Мобильные приложения</h3>
           </li>
           <li class="work-item">
-            <img src="./images/img3.jpg" alt="Это монитор" width="370" />
+            <picture>
+              <source srcset="./images/imgcomp.jpg 1x , ./images/imgcomp@2x.jpg 2x" media="(min-width: 1200px)">
+              <img src="./images/img3.jpg" alt="Это монитор" />
+            </picture>
+
             <h3 class="work-title">Дизайнерские решения</h3>
           </li>
         </ul>
@@ -172,7 +184,16 @@
 
         <ul class="our-team-flex">
           <li class="our-team-item">
-            <img src="./images/img4.jpg" alt="Фото сотрудника" width="270" class="photo-workers" />
+            <picture>
+              <source srcset="./images/img-John-mobile.jpg 1x , ./images/img-John-mobile@2x.jpg 2x"
+                media="(max-width: 767px)">
+              <source srcset="./images/img-John-mobile.jpg 1x , ./images/img-John-mobile@2x.jpg 2x"
+                media="(max-width:1199px)">
+              <source srcset="./images/img-John-computer.jpg 1x , ./images/img-John-computer@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <img src="./images/img4.jpg" alt="Фото сотрудника" class="photo-workers" />
+            </picture>
+
             <div class="our-team-content">
               <h3 class="names">John Smith</h3>
               <p class="text">Product Designer</p>
@@ -215,7 +236,16 @@
           </li>
 
           <li class="our-team-item">
-            <img src="./images/img5.jpg" alt="Фото сотрудника" width="270" class="photo-workers" />
+            <picture>
+              <source srcset="./images/img-Marta-mobile.jpg 1x , ./images/img-Marta-mobile@2x.jpg 2x"
+                media="(max-width: 767px)">
+              <source srcset="./images/img-Marta-mobile.jpg 1x , ./images/img-Marta-mobile@2x.jpg 2x"
+                media="(max-width:1199px)">
+              <source srcset="./images/img-Marta-computer.jpg 1x , ./images/img-Marta-computer@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <img src="./images/img5.jpg" alt="Фото сотрудника" class="photo-workers" />
+            </picture>
+
             <div class="our-team-content">
               <h3 class="names">Marta Stewart</h3>
               <p class="text">Frontend Developer</p>
@@ -258,7 +288,16 @@
           </li>
 
           <li class="our-team-item">
-            <img src="./images/img6.jpg" alt="Фото сотрудника" width="270" class="photo-workers" />
+            <picture>
+              <source srcset="./images/img-Robert-mobile.jpg 1x , ./images/img-Robert-mobile@2x.jpg 2x"
+                media="(max-width: 767px)">
+              <source srcset="./images/img-Robert-mobile.jpg 1x , ./images/img-Robert-mobile@2x.jpg 2x"
+                media="(max-width:1199px)">
+              <source srcset="./images/img-Robert-computer.jpg 1x , ./images/img-Robert-computer@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <img src="./images/img6.jpg" alt="Фото сотрудника" class="photo-workers" />
+            </picture>
+
             <div class="our-team-content">
               <h3 class="names">Robert Jakis</h3>
               <p class="text">Marketing</p>
@@ -301,7 +340,16 @@
           </li>
 
           <li class="our-team-item">
-            <img src="./images/img7.jpg" alt="Фото сотрудника" width="270" class="photo-workers" />
+            <picture>
+              <source srcset="./images/img-Martin-mobile.jpg 1x , ./images/img-Martin-mobile@2x.jpg 2x"
+                media="(max-width: 767px)">
+              <source srcset="./images/img-Martin-mobile.jpg 1x , ./images/img-Martin-mobile@2x.jpg 2x"
+                media="(max-width:1199px)">
+              <source srcset="./images/img-Martin-computer.jpg 1x , ./images/img-Martin-computer@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <img src="./images/img7.jpg" alt="Фото сотрудника" class="photo-workers" />
+            </picture>
+
             <div class="our-team-content">
               <h3 class="names">Martin Doe</h3>
               <p class="text">UI Designer</p>

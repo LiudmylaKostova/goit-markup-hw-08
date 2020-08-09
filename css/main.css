@@ -596,6 +596,8 @@ body {
 .checkbox-icon {
   content: "";
   position: absolute;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */

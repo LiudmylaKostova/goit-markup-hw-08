@@ -1,31 +1,66 @@
 .section.hero {
   text-align: center;
-  min-height: 600px;
+  min-height: 400px;
+  min-width: 320px;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   background-color: $secondary-background-color;
-  background-image: linear-gradient(
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   padding-top: 118px;
+  padding-bottom: 118px;
+  
+}
+
+.hero-title {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.26;
+  
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $background-color;
+
+  @media screen and (min-width: 1200px) {
+  font-size: 44px;
+  line-height: 1.36;
+  max-width: 696px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section.hero {
+background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header-mobile.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section.hero {
+background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header-tablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
     url(../images/Header.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $background-color;
-}
-.container.hero {
-  width: 696px;
+  }
 }

@@ -360,33 +360,62 @@ body {
 
 .section.hero {
   text-align: center;
-  min-height: 600px;
+  min-height: 400px;
+  min-width: 320px;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   background-color: #f5f4fa;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .hero-title {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.26;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.container.hero {
-  width: 696px;
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section.hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header-mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-mobile.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section.hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
+  }
 }
 
 .button {
@@ -876,6 +905,7 @@ body {
 .photo-workers {
   display: block;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .our-team-content {
@@ -1399,6 +1429,8 @@ body {
 
 .portfolio-img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .card-content {
@@ -1411,6 +1443,7 @@ body {
 .block-of-text {
   position: relative;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .text-on-photo {
@@ -1419,8 +1452,8 @@ body {
   opacity: 0;
   top: 0;
   left: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
   -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
